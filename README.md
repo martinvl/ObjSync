@@ -1,7 +1,7 @@
 ObjSync
 =========
 
-Synchronizes objects between clients via Socket.IO socket-like transports.
+Synchronizes objects between clients via [Socket.IO](http://socket.io) socket-like transports.
 
 Public API
 ==========
