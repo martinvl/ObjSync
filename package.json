@@ -3,7 +3,9 @@
     "version":"0.1.0b-2",
     "main":"lib/ObjSync.js",
     "dependencies":{
-        "KVCObject":">=0.1.0b",
+        "KVCObject":">=0.1.0b"
+    },
+    "devDependencies":{
         "Socket.IO":">=0.9",
         "Socket.IO-client":">=0.9"
     }
