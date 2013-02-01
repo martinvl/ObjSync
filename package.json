@@ -1,12 +1,12 @@
 {
     "name":"ObjSync",
-    "version":"0.1.0b-2",
+    "version":"0.1.0b-3",
     "main":"lib/ObjSync.js",
     "dependencies":{
         "KVCObject":">=0.1.0b"
     },
     "devDependencies":{
-        "Socket.IO":">=0.9",
-        "Socket.IO-client":">=0.9"
+        "socket.io":">=0.9",
+        "socket.io-client":">=0.9"
     }
 }
