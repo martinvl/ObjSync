@@ -1,6 +1,6 @@
 {
     "name":"ObjSync",
-    "version":"0.1.0b-3",
+    "version":"0.1.0b-4",
     "main":"lib/ObjSync.js",
     "dependencies":{
         "KVCObject":">=0.1.0b"
