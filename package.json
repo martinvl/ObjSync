@@ -1,8 +1,8 @@
 {
     "name":"objsync",
-    "version":"0.1.0-1",
+    "version":"0.1.0-2",
     "main":"lib/ObjSync.js",
-    "description":"Object synchronization between clients via [Socket.IO](http://socket.io) socket-like transports.",
+    "description":"Object synchronization between clients via Socket.io-socket-like transports.",
     "keywords":["synchronization", "sync"],
     "repository":{ "type":"git",
         "url":"https://github.com/martinvl/ObjSync.git"
