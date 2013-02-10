@@ -1,12 +1,9 @@
 ObjSync
-=========
-
-Synchronizes objects between clients via [Socket.IO](http://socket.io) socket-like transports.
+==========
+Object synchronization between clients via [Socket.IO](http://socket.io) socket-like transports.
 
 Public API
-==========
-Methods
--------
+----------
 * **(constructor)**(< _Socket.IO socket-like_ >transport, [< _object_ >options])  
     Creates and returns a new ObjSync object, which communicates via `transport`.  
     Valid options:
@@ -23,3 +20,30 @@ Methods
 
 Inherits all methods of [KVCObject](https://github.com/martinvl/KVCObject). All
 updates are automatically (and minimally) synced.
+
+Examples
+----------
+Client A. Will _send_ updates.
+```javascript
+var io = require('socket.io-client');
+var ObjSync = require('objsync');
+
+var transport = io.connect('localhost', {port:8888});
+var sync = new ObjSync(transport, {subscribe:false, publish:true});
+
+sync.setObject({foo:'bar', person:{name:'johnny'}});
+```
+
+Client B, aka server-side. Will _receive_ updates.
+```javascript
+var io = require('socket.io');
+var ObjSync = require('objsync');
+
+var transport = io.listen(8888).sockets;
+var sync = new ObjSync(transport);
+
+sync.once('update', function (updated) {
+    console.dir(updated); // will print { foo: 'bar', 'person.name': 'johnny' }
+    console.dir(sync.getObject()); // will print { foo: 'bar', person: { name: 'johnny' } }
+});
+```

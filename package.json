@@ -1,12 +1,19 @@
 {
-    "name":"ObjSync",
+    "name":"objsync",
     "version":"0.1.0b-4",
     "main":"lib/ObjSync.js",
-    "dependencies":{
-        "KVCObject":">=0.1.0b"
+    "description":"Object synchronization between clients via [Socket.IO](http://socket.io) socket-like transports.",
+    "keywords":["synchronization", "sync"],
+    "repository":{ "type":"git",
+        "url":"https://github.com/martinvl/ObjSync.git"
     },
-    "devDependencies":{
-        "socket.io":">=0.9",
-        "socket.io-client":">=0.9"
+    "author":{
+        "name":"Martin V. Larsen",
+        "email":"martin@melvon.com"
+    },
+    "homepage":"https://github.com/martinvl/ObjSync",
+    "bugs":"https://github.com/martinvl/ObjSync/issues",
+    "dependencies":{
+        "kvcobj":">=0.1.0"
     }
 }
