@@ -1,6 +1,6 @@
 {
     "name":"objsync",
-    "version":"0.1.0-4",
+    "version":"0.1.0-5",
     "main":"lib/ObjSync.js",
     "description":"Object synchronization between clients via Socket.io-socket-like transports.",
     "keywords":["synchronization", "sync"],
@@ -14,6 +14,7 @@
     "homepage":"https://github.com/martinvl/ObjSync",
     "bugs":"https://github.com/martinvl/ObjSync/issues",
     "dependencies":{
+        "inherits":">=2.0",
         "kvcobj":">=0.1"
     }
 }
